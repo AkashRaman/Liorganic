@@ -680,22 +680,6 @@
         background-image: linear-gradient(to right, rgba(255,255,255,0.75), rgba(255,255,255,0.97)), url(img/hero.jpg);
     }
     
-    .hero-text-box{ 
-        left: 0 !important;
-        right: 0 !important; 
-    }
-
-    .hero-text-box p{ 
-        margin-left: -5%;
-        text-align: center; 
-    }
-    
-    h1 { text-align: center; }
-    
-    .btn-box { 
-        left: 10.443572027% !important;
-    }
-    
     .sf-lists { 
         min-width: 212.703px;
         margin: 0 calc( 50% - 106.3515px );
