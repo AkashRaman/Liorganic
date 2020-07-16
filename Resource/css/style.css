@@ -1114,7 +1114,7 @@ nav {
     height: -moz-fit-content;
     height: fit-content;
     float: right;
-    margin: 17.5px 7.5px !important;
+    margin: 17.5px 20px 17.5px 7.5px !important;
     display: none;
 }
 
@@ -1137,7 +1137,7 @@ nav {
     height: -moz-fit-content;
     height: fit-content;
     float: right;
-    margin: 12.833333334px 7.5px !important;
+    margin: 12.833333334px 20px 12.833333334px 7.5px !important;
     display: none;
 }
 
