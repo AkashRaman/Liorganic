@@ -87,7 +87,6 @@ $(document).ready(function () {
             $('.short-copy').animate({ opacity: '1'});
             $('.about-us').addClass('underline');
         } else {
-            $('.short-copy').animate({ opacity: '0'});
             $('.about-us').removeClass('underline');
         }
     }, {
@@ -96,10 +95,8 @@ $(document).ready(function () {
     
     $('.js--section-product').waypoint(function (direction) {
         if (direction == "down") {
-            $('.short-copy').animate({ opacity: '0'});
             $('.about-us').removeClass('underline');
         } else {
-            $('.short-copy').animate({ opacity: '1'});
             $('.about-us').addClass('underline');
         }
     }, {
@@ -192,5 +189,293 @@ $(document).ready(function () {
         };
         
     });
+    
+    if ($(window).width() <= "768") {
+        $('.box-1').waypoint( function (direction) {
+            if (direction == "down") {
+                $('.box-1').addClass('transform-105');
+            } else {
+                $('.box-1').removeClass('transform-105');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        $('.box-2').waypoint( function (direction) {
+            if (direction == "down") {
+                $('.box-2').addClass('transform-105');
+                $('.box-1').removeClass('transform-105');
+            } else {
+                $('.box-2').removeClass('transform-105');
+                $('.box-1').addClass('transform-105');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        $('.box-3').waypoint( function (direction) {
+            if (direction == "down") {
+                $('.box-3').addClass('transform-105');
+                $('.box-2').removeClass('transform-105');
+            } else {
+                $('.box-3').removeClass('transform-105');
+                $('.box-2').addClass('transform-105');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        $('.box-4').waypoint( function (direction) {
+            if (direction == "down") {
+                $('.box-4').addClass('transform-105');
+                $('.box-3').removeClass('transform-105');
+            } else {
+                $('.box-4').removeClass('transform-105');
+                $('.box-3').addClass('transform-105');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        
+        $('#section-products').waypoint( function (direction) {
+            if (direction == "down") {
+                $('.box-4').removeClass('transform-105');
+            } else {
+                $('.box-4').addClass('transform-105');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        
+        $('#fruits').waypoint(function (direction) {
+            if (direction == "down") {
+                $('#fruits').addClass('transform-100');
+                $('#fruits').css("opacity" , "1");
+                $('#vege').css("opacity" , "0.7");
+                $('#tradi-food').css("opacity" , "0.7");
+                $('#fast-food').css("opacity" , "0.7");
+            } else {
+                $('#fruits').removeClass('transform-100');
+                $('#fruits').css("opacity" , "1");
+                $('#vege').css("opacity" , "1");
+                $('#tradi-food').css("opacity" , "1");
+                $('#fast-food').css("opacity" , "1");
+            }
+        }, {
+            offset: "50%"
+        });
+
+        $('#vege').waypoint(function (direction) {
+            if (direction == "down") {
+                $('#vege').addClass('transform-100');
+                $('#fruits').removeClass('transform-100');
+                $('#fruits').css("opacity" , "0.7");
+                $('#vege').css("opacity" , "1");
+                $('#tradi-food').css("opacity" , "0.7");
+                $('#fast-food').css("opacity" , "0.7");
+            } else {
+                $('#vege').removeClass('transform-100');
+                $('#fruits').addClass('transform-100');
+                $('#fruits').css("opacity" , "1");
+                $('#vege').css("opacity" , "0.7");
+                $('#tradi-food').css("opacity" , "0.7");
+                $('#fast-food').css("opacity" , "0.7");
+            }
+        }, {
+            offset: "50%"
+        });
+
+        $('#tradi-food').waypoint(function (direction) {
+            if (direction == "down") {
+                $('#tradi-food').addClass('transform-100');
+                $('#vege').removeClass('transform-100');
+                $('#fruits').css("opacity" , "0.7");
+                $('#vege').css("opacity" , "0.7");
+                $('#tradi-food').css("opacity" , "1");
+                $('#fast-food').css("opacity" , "0.7");
+            } else {
+                $('#tradi-food').removeClass('transform-100');
+                $('#vege').addClass('transform-100');
+                $('#fruits').css("opacity" , "0.7");
+                $('#vege').css("opacity" , "1");
+                $('#tradi-food').css("opacity" , "0.7");
+                $('#fast-food').css("opacity" , "0.7");
+            }
+        }, {
+            offset: "50%"
+        });
+
+        $('#fast-food').waypoint(function (direction) {
+            if (direction == "down") {
+                $('#fast-food').addClass('transform-100');
+                $('#tradi-food').removeClass('transform-100');
+                $('#fruits').css("opacity" , "0.7");
+                $('#vege').css("opacity" , "0.7");
+                $('#tradi-food').css("opacity" , "0.7");
+                $('#fast-food').css("opacity" , "1");
+            } else {
+                $('#fast-food').removeClass('transform-100');
+                $('#tradi-food').addClass('transform-100');
+                $('#fruits').css("opacity" , "0.7");
+                $('#vege').css("opacity" , "0.7");
+                $('#tradi-food').css("opacity" , "1");
+                $('#fast-food').css("opacity" , "0.7");
+            }
+        }, {
+            offset: "50%"
+        });
+
+        $('#section-steps').waypoint( function (direction) {
+            if (direction == "down") {
+                $('#fast-food').removeClass('transform-100');
+                $('#fruits').css("opacity" , "1");
+                $('#vege').css("opacity" , "1");
+                $('#tradi-food').css("opacity" , "1");
+                $('#fast-food').css("opacity" , "1");
+            } else {
+                $('#fast-food').addClass('transform-100');
+                $('#fruits').css("opacity" , "0.7");
+                $('#vege').css("opacity" , "0.7");
+                $('#tradi-food').css("opacity" , "0.7");
+                $('#fast-food').css("opacity" , "1");
+            }
+            
+        },{
+            offset: "50%"
+        });
+        
+        $('#work-step-1').waypoint( function (direction) {
+            if (direction == "down") {
+                $('#work-step-1').addClass('work-step-mobile');
+            } else {
+                $('#work-step-1').removeClass('work-step-mobile');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        $('#work-step-2').waypoint( function (direction) {
+            if (direction == "down") {
+                $('#work-step-2').addClass('work-step-mobile');
+                $('#work-step-1').removeClass('work-step-mobile');
+            } else {
+                $('#work-step-2').removeClass('work-step-mobile');
+                $('#work-step-1').addClass('work-step-mobile');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        $('#work-step-3').waypoint( function (direction) {
+            if (direction == "down") {
+                $('#work-step-3').addClass('work-step-mobile');
+                $('#work-step-2').removeClass('work-step-mobile');
+            } else {
+                $('#work-step-3').removeClass('work-step-mobile');
+                $('#work-step-2').addClass('work-step-mobile');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        $('#work-step-4').waypoint( function (direction) {
+            if (direction == "down") {
+                $('#work-step-4').addClass('work-step-mobile');
+                $('#work-step-3').removeClass('work-step-mobile');
+            } else {
+                $('#work-step-4').removeClass('work-step-mobile');
+                $('#work-step-3').addClass('work-step-mobile');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        
+        $('#section-cities').waypoint( function (direction) {
+            if (direction == "down") {
+                $('#work-step-4').removeClass('work-step-mobile');
+            } else {
+                $('#work-step-4').addClass('work-step-mobile');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        
+        $('.san-francisco').waypoint( function (direction) {
+            if (direction == "down") {
+                $('.san-francisco').addClass('cities-card-mobile');
+            } else {
+                $('.san-francisco').removeClass('cities-card-mobile');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        $('.mumbai').waypoint( function (direction) {
+            if (direction == "down") {
+                $('.mumbai').addClass('cities-card-mobile');
+                $('.san-francisco').removeClass('cities-card-mobile');
+            } else {
+                $('.mumbai').removeClass('cities-card-mobile');
+                $('.san-francisco').addClass('cities-card-mobile');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        $('.tokyo').waypoint( function (direction) {
+            if (direction == "down") {
+                $('.tokyo').addClass('cities-card-mobile');
+                $('.mumbai').removeClass('cities-card-mobile');
+            } else {
+                $('.tokyo').removeClass('cities-card-mobile');
+                $('.mumbai').addClass('cities-card-mobile');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        $('.sydney').waypoint( function (direction) {
+            if (direction == "down") {
+                $('.sydney').addClass('cities-card-mobile');
+                $('.tokyo').removeClass('cities-card-mobile');
+            } else {
+                $('.sydney').removeClass('cities-card-mobile');
+                $('.tokyo').addClass('cities-card-mobile');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        
+        $('.london').waypoint( function (direction) {
+            if (direction == "down") {
+                $('.london').addClass('cities-card-mobile');
+                $('.sydney').removeClass('cities-card-mobile');
+            } else {
+                $('.london').removeClass('cities-card-mobile');
+                $('.sydney').addClass('cities-card-mobile');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        
+        $('#section-form').waypoint( function (direction) {
+            if (direction == "down") {
+                $('.london').removeClass('cities-card-mobile');
+            } else {
+                $('.london').addClass('cities-card-mobile');
+            }
+            
+        },{
+            offset: "50%"
+        });
+        
+        
+    };
     
 });

@@ -118,19 +118,19 @@
                     <div class="top-bar">
                         <ion-icon name="menu-outline"></ion-icon>
                     </div>
-                    <div class="work-step">
+                    <div class="work-step" id="work-step-1">
                         <div>1</div>
                         <p>Order your Foods, Fruits &amp; Vegetables using our website or mobile app. Or you can even call us.</p>
                     </div>
-                    <div class="work-step">
+                    <div class="work-step" id="work-step-2">
                         <div>2</div>
                         <p>Payment for your order can be cash on delivery or online payment.</p>
                     </div>
-                    <div class="work-step">
+                    <div class="work-step" id="work-step-3">
                         <div>3</div>
                         <p>One of our shops near you receives your order details and they will deliver your order to you less than 20 minutes.</p>
                     </div>
-                    <div class="work-step">
+                    <div class="work-step" id="work-step-4">
                         <div>4</div>
                         <p id="section-city-scroll">One or more shops will be alloted for you, depending on various types of items in your order.</p>
                     </div>
@@ -219,39 +219,42 @@
             </div>
             <div class="row">
                 <form method="post" action="#" class="sign-form">
-                    <lable name="name" class="col span-1-of-2 lable">Name</lable>
-                    <div class="span-1-of-12"></div>
-                    <div class="col span-1-of-2">
-                        <input type="text" name="name" id="name" placeholder="Your Name" required>
-                    </div>
-                    <lable name="number" class="col span-1-of-2 lable">Age</lable>
-                    <div class="span-1-of-12"></div>
-                    <div class="col span-1-of-2">
-                        <input type="number" name="number" id="number" min="18" required>
-                    </div>
-                    <lable name="email" class="col span-1-of-2 lable">Email</lable>
-                    <div class="span-1-of-12"></div>
-                    <div class="col span-1-of-2">
-                        <input type="email" name="email" id="email" placeholder="Your Email" required>
-                    </div>
-                    <lable name="gender" class="col span-1-of-2 lable">Gender</lable>
-                    <div class="span-1-of-12"></div>
-                    <div class="col span-1-of-2">
-                        <select name="gender" id="gender">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="custom">Custom</option>
-                        </select>
-                    </div>
-                    <lable name="update" class="col span-1-of-2 lable">Liorganic's Update Required?</lable>
-                    <div class="span-1-of-12"></div>
-                    <div class="col span-1-of-2">
-                        <input type="checkbox" name="update" id="update" checked>Yes
-                    </div>
-                    <lable name="address" class="col span-1-of-2 lable">Address</lable>
-                    <div class="span-1-of-12"></div>
-                    <div class="col span-1-of-2">
-                        <textarea name="address" placeholder="Type Your Address" required></textarea>
+                    <div class="form-mobile">
+                            <lable name="name" class="col span-1-of-2 lable">Name</lable>
+                        <div class="span-1-of-12"></div>
+                        <div class="col span-1-of-2">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        </div>
+                        <lable name="number" class="col span-1-of-2 lable">Age</lable>
+                        <div class="span-1-of-12"></div>
+                        <div class="col span-1-of-2">
+                            <input type="number" name="number" id="number" min="18" required>
+                        </div>
+                        <lable name="email" class="col span-1-of-2 lable">Email</lable>
+                        <div class="span-1-of-12"></div>
+                        <div class="col span-1-of-2">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <lable name="gender" class="col span-1-of-2 lable">Gender</lable>
+                        <div class="span-1-of-12"></div>
+                        <div class="col span-1-of-2">
+                            <select name="gender" id="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="custom">Custom</option>
+                            </select>
+                        </div>
+                        <lable name="update" class="col span-1-of-2 lable">Liorganic's Update Required?</lable>
+                        <div class="span-1-of-12"></div>
+                        <div class="col span-1-of-2">
+                            <input type="checkbox" name="update" id="update" checked>Yes
+                        </div>
+                        <lable name="address" class="col span-1-of-2 lable">Address</lable>
+                        <div class="span-1-of-12"></div>
+                        <div class="col span-1-of-2">
+                            <textarea name="address" placeholder="Type Your Address" required></textarea>
+                        </div>
+
                     </div>
                     <div class="row sign-in">
                         <input type="submit" value="Sign In" class="sign-in-btn">

@@ -536,6 +536,8 @@ h3{
     width: 100%;
     -webkit-box-shadow: 0 0.5px 6px 0 rgba(0, 0, 0, 0.47);
     box-shadow: 0 0.5px 6px 0 rgba(0, 0, 0, 0.47);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     background-color: #3F3D56;
     padding: 5px;
@@ -1184,3 +1186,26 @@ nav {
 .display {
     display: inline-block !important;
 }
+
+.transform-105 {
+    -webkit-transform: scale(1.05) !important;
+    transform: scale(1.05) !important;
+}
+
+.transform-100 {
+    -webkit-transform: scale(1.00) !important;
+    transform: scale(1.00) !important;
+}
+
+.work-step-mobile {
+    background-color: #3F3D56 !important;
+    color: #f5f5f5 !important;
+    -webkit-transform: scale(1.05) !important;
+    transform: scale(1.05) !important;
+}
+
+.cities-card-mobile {
+    -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28) !important;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28) !important;
+}
+
