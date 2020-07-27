@@ -35,9 +35,9 @@ $(document).ready(function () {
     });
     
     $('#fruits').hover(function () {
-        $('#vege').css("opacity" , "0.8");
-        $('#tradi-food').css("opacity" , "0.8");
-        $('#fast-food').css("opacity" , "0.8");
+        $('#vege').css("opacity" , "0.7");
+        $('#tradi-food').css("opacity" , "0.7");
+        $('#fast-food').css("opacity" , "0.7");
     },
     
     function () {
@@ -47,9 +47,9 @@ $(document).ready(function () {
     });
     
     $('#vege').hover(function () {
-        $('#fruits').css("opacity" , "0.8");
-        $('#tradi-food').css("opacity" , "0.8");
-        $('#fast-food').css("opacity" , "0.8");
+        $('#fruits').css("opacity" , "0.7");
+        $('#tradi-food').css("opacity" , "0.7");
+        $('#fast-food').css("opacity" , "0.7");
     },
     
     function () {
@@ -59,9 +59,9 @@ $(document).ready(function () {
     });
     
     $('#tradi-food').hover(function () {
-        $('#vege').css("opacity" , "0.8");
-        $('#fruits').css("opacity" , "0.8");
-        $('#fast-food').css("opacity" , "0.8");
+        $('#vege').css("opacity" , "0.7");
+        $('#fruits').css("opacity" , "0.7");
+        $('#fast-food').css("opacity" , "0.7");
     },
     
     function () {
@@ -71,9 +71,9 @@ $(document).ready(function () {
     });
     
     $('#fast-food').hover(function () {
-        $('#vege').css("opacity" , "0.8");
-        $('#tradi-food').css("opacity" , "0.8");
-        $('#fruits').css("opacity" , "0.8");
+        $('#vege').css("opacity" , "0.7");
+        $('#tradi-food').css("opacity" , "0.7");
+        $('#fruits').css("opacity" , "0.7");
     },
     
     function () {
@@ -190,7 +190,16 @@ $(document).ready(function () {
         
     });
     
+    
     if ($(window).width() <= "768") {
+        
+        $('.box').removeClass('hover');
+        $('.product-img').removeClass('hover');
+        $('.work-step').removeClass('hover');
+        $('.cities-card').removeClass('hover');
+        $('.nav-section').removeClass('hover');
+        
+        
         $('.box-1').waypoint( function (direction) {
             if (direction == "down") {
                 $('.box-1').addClass('transform-105');
@@ -248,6 +257,39 @@ $(document).ready(function () {
         },{
             offset: "50%"
         });
+        
+        $('#fruits').hover(function () {
+            
+        },
+
+        function () {
+            
+        });
+
+        $('#vege').hover(function () {
+            
+        },
+
+        function () {
+            
+        });
+
+        $('#tradi-food').hover(function () {
+            
+        },
+
+        function () {
+            
+        });
+
+        $('#fast-food').hover(function () {
+            
+        },
+
+        function () {
+            
+        });
+
         
         $('#fruits').waypoint(function (direction) {
             if (direction == "down") {
@@ -476,6 +518,11 @@ $(document).ready(function () {
         });
         
         
-    };
-    
+    } else {
+        $('.box').addClass('hover');
+        $('.product-img').addClass('hover');
+        $('.work-step').addClass('hover');
+        $('.cities-card').addClass('hover');
+        $('.nav-section').addClass('hover');
+}
 });

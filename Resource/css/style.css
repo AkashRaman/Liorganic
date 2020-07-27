@@ -400,7 +400,7 @@ h3{
     transform-origin: center;
 }
 
-.box:hover {
+.box.hover:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
@@ -474,7 +474,7 @@ h3{
     transition: all 0.4s;
 }
 
-.product-img:hover {
+.product-img.hover:hover {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
@@ -565,7 +565,7 @@ h3{
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.47);
 }
 
-.work-step:hover {
+.work-step.hover:hover {
     background-color: #3F3D56;
     color: #f5f5f5;
     -webkit-transform: scale(1.05);
@@ -627,7 +627,7 @@ h3{
     padding-left: 0.75%;
 }
 
-.cities-card:hover {
+.cities-card.hover:hover {
     -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
@@ -923,7 +923,7 @@ nav {
     transition: all 0.2s;
 }
 
-.nav-section li div a:hover,
+.nav-section.hover li div a:hover,
 .nav-section li div a:active{
     color: #000;
     font-size: 125%;
@@ -990,7 +990,7 @@ nav {
     transition: all 0.2s;
 }
 
-.sticky .nav-section li div a:hover,
+.sticky .nav-section.hover li div a:hover,
 .sticky .nav-section li div a:active{
     color: #555;
     font-size: 100%;

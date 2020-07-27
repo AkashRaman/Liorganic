@@ -294,7 +294,7 @@
         transition: all 0.2s;
     }
 
-    .nav-section li div a:hover,
+    .nav-section.hover li div a:hover,
     .nav-section li div a:active{
         color: #000;
         font-size: 100% !important;
@@ -351,7 +351,7 @@
         transition: all 0.2s;
     }
 
-    .sticky .nav-section li div a:hover,
+    .sticky .nav-section.hover li div a:hover,
     .sticky .nav-section li div a:active{
         color: #555;
         font-size: 100%;
