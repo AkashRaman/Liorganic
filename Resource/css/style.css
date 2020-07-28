@@ -368,6 +368,15 @@ h3{
     padding-bottom: 50px;
 }
 
+#section-features::before { 
+      display: block; 
+      content: " "; 
+      margin-top: -50px; 
+      height: 50px; 
+      visibility: hidden; 
+      pointer-events: none;
+    }
+
 .long-copy {
     width: 100%;
     text-align: center;
@@ -488,12 +497,31 @@ h3{
 #section-steps{
     width: 100%;
     background-color: #6dff63;
-    padding: 50px 0;
+    padding: 0px 0 0px 0;
     -webkit-box-shadow: 0px 0px 18px 12px rgba(0,0,0,0.35);
     box-shadow: 0px 0px 18px 12px rgba(0,0,0,0.35);
     position: relative;
     z-index: 2;
 }
+
+#section-steps::before { 
+      display: block; 
+      content: " "; 
+      margin-top: -50px; 
+      height: 50px; 
+      visibility: hidden !important; 
+      pointer-events: none;
+    }
+
+#section-steps-after { 
+      display: block; 
+      content: " ";  
+      height: 50px; 
+      visibility: hidden !important; 
+      pointer-events: none;
+    }
+
+.steps-heading { margin-top: 50px; }
 
 #section-steps h2 {
     max-width: 14ch;
@@ -688,7 +716,7 @@ h3{
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding: 50px 0;
+    padding: 0px 0 50x 0;
     width: 100%;
     background-color: #6dff63;
     -webkit-box-shadow: 0px 0px 18px 12px rgba(0,0,0,0.35);
@@ -697,9 +725,20 @@ h3{
     z-index: 2;
 }
 
+#section-form::before { 
+      display: block; 
+      content: " "; 
+      margin-top: -50px; 
+      height: 50px; 
+      visibility: hidden; 
+      pointer-events: none;
+    }
+
+
 #section-form h2 {
     max-width: 9ch;
     border-bottom: 1.5px solid #ffff;
+    margin-top: 50px;
 }
 
 .sign-form {

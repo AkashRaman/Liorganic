@@ -154,13 +154,18 @@ $(document).ready(function () {
     })
     */
     
+    
     $('.mobile-nav-icon').click(function () {
         var nav = $('.nav-section');
         var icon = $('.mobile-nav-icon i');
         var isActive = nav.is(":visible");
         nav.slideToggle(200);
-        
         if (isActive == false) {
+            $('.main-link').click(function () {
+                nav.slideUp(200);
+                icon.removeClass('fa-times');
+                icon.addClass('fa-bars');
+            });
             icon.removeClass('fa-bars');
             icon.addClass('fa-times');
         } else {
